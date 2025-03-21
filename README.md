@@ -1,5 +1,3 @@
-# POBS
-
 # POBS: Preference, Opinion, and Belief Survey
 
 This repository contains the **anonymized dataset** used in our paper:  
