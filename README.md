@@ -1,30 +1,24 @@
 # POBS: Preference, Opinion, and Belief Survey
 
 This repository contains the **anonymized dataset** used in our paper:  
-**"Evaluating Subjective Preferences, Opinions, and Beliefs in Large Language Models"** (under submission).
+**"Think Again! The effect of test-time compute on Preferences, Opinions, and Beliefs of Large Language Models"** (under review to ACL Industry track).
 
-## 📦 Dataset Contents
-
-The repository includes:
+## 📦 Contents
 
 - **POBS Dataset**:  
   A diverse set of prompts designed to probe **subjective tendencies** in large language models across **societal, ethical, cultural, and personal domains**.
 
-- **Model Responses**:  
-  Responses from **10 leading LLMs**, both open- and closed-source, across different prompting strategies including:
-  - Direct prompting
-  - Chain-of-thought reasoning
-  - Self-reflection
-
-Each response is annotated with metadata such as model name, prompt type, topic, and Likert-scale polarity.
 
 ## 📊 Purpose
 
 The dataset supports analysis of:
 - Subjective preferences and biases in LLMs
-- Model behavior across prompting styles
 - Impact of test-time compute (e.g., reasoning and reflection)
 - Metrics including **neutrality**, **reliability**, and **consistency**
+
+- **Model Responses**:  
+  Responses from **10 leading LLMs**, both open- and closed-source, across the different prompting.
+
 
 ## 📁 File Structure
 
