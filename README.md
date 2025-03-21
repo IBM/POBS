@@ -32,6 +32,6 @@ The dataset supports analysis of:
 pobs/
 ├── POBS_v11.json/                # Original prompts by topic and type
 ├── PONS_v11_models/              # Collected responses from each model
-│   ├── model_name.jsonl    # One file per model
+│   ├── model_name.json    # One file per model
 ├── README.md               # This file
 ```
