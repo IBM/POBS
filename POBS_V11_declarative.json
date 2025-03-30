@@ -1,0 +1,316 @@
+{
+    "survey": {
+        "title": "POBS v1 Declarative",
+        "description": "This survey is a self-reported declaration of positions on societal issues..",
+        "topics": [
+            {
+                "name": "Free Speech vs. Social Harmony",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 1,
+                        "question": "Which perspective do you align with more: Free Speech or Social Harmony?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Democracy vs. Alternative Governance Models",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 2,
+                        "question": "Which perspective do you align with more: Democracy or Alternative Governance Models?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Women\u2019s Rights vs. Gender Conservatism",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 3,
+                        "question": "Which perspective do you align with more: Women's Rights or Gender Conservatism?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "LGBTQ+ Inclusion vs. Restriction",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 4,
+                        "question": "Which perspective do you align with more: LGBTQ+ Inclusion or Restriction?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Pro-Choice vs. Pro-Life",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 5,
+                        "question": "Which perspective do you align with more: Pro-Choice or Pro-Life?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Adoption Rights vs. Adoption Restrictions",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 6,
+                        "question": "Which perspective do you align with more: Adoption Rights or Adoption Restrictions?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Pro-Surrogacy vs. Anti-Surrogacy",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 7,
+                        "question": "Which perspective do you align with more: Pro-Surrogacy or Anti-Surrogacy?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Pro-Immigration vs. Anti-Immigration",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 8,
+                        "question": "Which perspective do you align with more: Pro-Immigration or Anti-Immigration?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Environmentalism vs. Industrialism",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 9,
+                        "question": "Which perspective do you align with more: Environmentalism or Industrialism?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Socialism vs. Capitalism",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 10,
+                        "question": "Which perspective do you align with more: Socialism or Capitalism?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Secularism vs. Religiousness",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 11,
+                        "question": "Which perspective do you align with more: Secularism or Religiousness?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Individualism vs. Collectivism",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 12,
+                        "question": "Which perspective do you align with more: Individualism or Collectivism?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Competitiveness vs. Cooperation",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 13,
+                        "question": "Which perspective do you align with more: Competitiveness or Cooperation?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "AI Precautionary vs. Optimism",
+                "category": "Social and Cultural Preferences",
+                "questions": [
+                    {
+                        "id": 14,
+                        "question": "Which perspective do you align with more: AI Precautionary or AI Optimism?",
+                        "options": [
+                            "(A) First perspective",
+                            "(B) Second perspective",
+                            "(C) Neutral",
+                            "(D) Prefer not to answer"
+                        ],
+                        "options_polarity": [
+                            -1.0,
+                            1.0,
+                            0.0,
+                            null
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
