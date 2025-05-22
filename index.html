@@ -2,41 +2,30 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="NL-Eye: Abductive NLI for Images">
-  <meta property="og:title" content="NL-Eye: Abductive NLI for Images"/>
-  <meta property="og:description" content="NL-Eye: Abductive NLI for Images"/>
-  <meta property="og:url" content="https://github.dev/venturamor/NLEye"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/banner_image_1200x600.png" />
+  <meta name="description" content="Think Again! The Effect of Test-Time Compute on LLM Preferences, Opinions, and Beliefs">
+  <meta property="og:title" content="Think Again!"/>
+  <meta property="og:description" content="Evaluating how LLMs express subjective beliefs and how test-time compute influences neutrality, consistency, and reliability."/>
+  <meta property="og:url" content="PLACEHOLDER[<project website link>]"/>
+  <meta property="og:image" content="PLACEHOLDER[<static/images/banner_pobs.png>]" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="NL-Eye: Abductive NLI for Images">
-  <meta name="twitter:description" content="NL-Eye: Abductive NLI for Images">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/banner_image_1200x600.png">
+  <meta name="twitter:title" content="Think Again!">
+  <meta name="twitter:description" content="Evaluating how LLMs express subjective beliefs and how test-time compute influences neutrality, consistency, and reliability.">
+  <meta name="twitter:image" content="PLACEHOLDER[<static/images/banner_pobs.png>]">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="benchmark, abductive reasoning, NLI, multimodality, VLM">
+  <meta name="keywords" content="LLM, subjectivity, beliefs, bias, neutrality, benchmark, consistency, preferences, test-time compute">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>NL-EYE: ABDUCTIVE NLI ON IMAGES</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <title>Think Again!</title>
+  <link rel="icon" type="image/x-icon" href="PLACEHOLDER[<favicon>]">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -45,89 +34,43 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Think Again! The Effect of Test-Time Compute on LLM Subjectivity</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">PLACEHOLDER[<Author names and links>]</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">PLACEHOLDER[<Affiliations>]</span>
+          </div>
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">NL-EYE: ABDUCTIVE NLI FOR IMAGES</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://venturamor.github.io/" target="_blank">Mor Ventura</a>,</span>
-                <span class="author-block">
-                  <a href="https://tokeron.github.io/" target="_blank">Michael Toker</a>,</span>
-                  <span class="author-block">
-                    <a href="https://tokeron.github.io/" target="_blank">Nitay Calderon</a>,</span>
-                  <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=c748UcIAAAAJ&hl=en" target="_blank">Zorik Gekhman</a>,</span>
-                    <span class="author-block">
-                  <a href="https://yonatanbitton.github.io/" target="_blank">Yonatan Bitton</a>,</span>
-                  <span class="author-block">
-                    <a href="https://roireichart.com/" target="_blank">Roi Reichart</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Technion - Israel Institute of Technology<br>Google Research</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2410.02613.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/venturamor/nl_eye" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- Hugging Face Datasets link -->
-                <span class="link-block">
-                  <a href="https://huggingface.co/datasets/MorVentura/NL-Eye" class="external-link button is-normal is-rounded is-warning">
-                    <span class="icon">
-                      <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face logo" style="width: 20px; height: 20px;">
-                    </span>
-                    <span>HF Dataset</span>
-                  </a>
-                </span>
-
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2410.02613" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="PLACEHOLDER[<arxiv pdf>]" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="PLACEHOLDER[<github link>]" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="PLACEHOLDER[<huggingface dataset>]" class="external-link button is-normal is-rounded is-warning">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face logo" style="width: 20px; height: 20px;">
                   </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="PLACEHOLDER[<arxiv abs>]" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
@@ -139,22 +82,17 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/main_examples_bench_no_people-1.png" alt="NL-Eye real examples. Example from every reasoning category." height="100%">
+      <img src="PLACEHOLDER[<static/images/pobs_teaser.png>]" alt="POBs teaser image" height="100%">
       <h2 class="subtitle has-text-centered">
-        NL-Eye Examples. Each example represents a reasoning category, and contains 3 images: premise (left column), plausible hypothesis (middle column) and implausible hypothesis (right column). The plausible hypotheses are framed in green while the implausible in red. The explanations are provided below each sample.
+        POBs reveals how different LLMs respond to subjective, cultural, and ethical questions.
       </h2>
     </div>
   </div>
 </section>
 
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -162,251 +100,42 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Will a Visual Language Model (VLM)-based bot warn us about slipping if it detects a wet floor? Recent VLMs have demonstrated impressive capabilities, yet their ability to infer outcomes and causes remains underexplored. To address this, we introduce NL-Eye, a benchmark designed to assess VLMs' visual abductive reasoning skills. NL-Eye adapts the abductive Natural Language Inference (NLI) task to the visual domain, requiring models to evaluate the plausibility of hypothesis images based on a premise image and explain their decisions. NL-Eye consists of 350 carefully curated triplet examples (1,050 images) spanning diverse reasoning categories: physical, functional, logical, emotional, cultural, and social. The data curation process involved two steps - writing textual descriptions and generating images using text-to-image models, both requiring substantial human involvement to ensure high-quality and challenging scenes. Our experiments show that VLMs struggle significantly on NL-Eye, often performing at random baseline levels, while humans excel in both plausibility prediction and explanation quality. This demonstrates a deficiency in the abductive reasoning capabilities of modern VLMs. NL-Eye represents a crucial step toward developing VLMs capable of robust multimodal reasoning for real-world applications, including accident-prevention bots and generated video verification.          </p>
+            We present the Preference, Opinion, and Belief survey (POBs), a benchmark for evaluating LLMs' subjectivity across societal, ethical, and personal domains. We examine how increasing test-time compute—through reasoning and self-reflection—impacts reliability, neutrality, and consistency. Our findings show that while these mechanisms help in other tasks, they offer limited improvements here. Surprisingly, newer models tend to be less consistent and more biased, often aligning with progressive-collectivist views. POBs enables deeper auditing of LLM behavior, helping users and developers better understand and manage ideological tendencies in deployed models.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel1" class="carousel results-carousel1">
-        <div class="item">
-          <!-- Centered image -->
-          <div style="text-align: center;">
-            <img src="static/images/sample_wet_floor-1.png" alt="Motivation" style="width: 600px; height: auto;"/>
-          </div>
-          <h2 class="subtitle has-text-centered">
-            Motivation: Will a VLM-based bot warn us about slipping if it detects a wet floor?
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Centered image -->
-          <div style="text-align: center;">
-            <img src="static/images/benchmark_creation_scheme_final-1.png" alt="curation" style="width: 500px; height: auto;"/>
-          </div>
-          <h2 class="subtitle has-text-centered">
-            NL-Eye data curation workflow scheme.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Centered image -->
-          <div style="text-align: center;">
-            <img src="static/images/table1_page6-1.png" alt="models" style="width: 500px; height: auto;"/>
-          </div>
-          <h2 class="subtitle has-text-centered">
-           Models and baselines by their input strategy and reasoning approach.  
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Centered image -->
-          <div style="text-align: center;">
-            <img src="static/images/setups_scheme_with_metrics-1.png" alt="setups" style="width: 500px; height: auto;"/>
-          </div>
-          <h2 class="subtitle has-text-centered">
-            Two input setups of the VLM: (1) Triplet setup (left) and (2) Pairs setup (right). The triplet is provided two times with different orders of the hypotheses (A and B). The pairs should output a plausibility score. 
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Centered image -->
-          <div style="text-align: center;">
-            <img src="static/images/table2_page8-1.png" alt="vision-based reasoning" style="width: 500px; height: auto;"/>
-          </div>
-          <h2 class="subtitle has-text-centered">
-          Main results: scores for vision-based experiments. VLMs are greatly outperformed by humans.   
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Centered image -->
-          <div style="text-align: center;">
-            <img src="static/images/categories_nleye-1.png" alt="categories" style="width: 600px; height: auto;"/>
-          </div>
-          <h2 class="subtitle has-text-centered">
-            VLMs struggle with the Emotional and Functional categories but perform better on Social and Cultural ones and on parallel reasoning.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Centered image -->
-          <div style="text-align: center;">
-            <img src="static/images/table3_page9-1.png" alt="text-based reasoning" style="width: 500px; height: auto;"/>
-          </div>
-          <h2 class="subtitle has-text-centered">
-          Text-based: Performace for plausibility prediction in the triplet setup. Predictor models perform well when using the gold-description.   
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Centered image -->
-          <div style="text-align: center;">
-            <img src="static/images/error_analysis_heatmap_hq-1.png" alt="error analysis" style="width: 500px; height: auto;"/>
-          </div>
-          <h2 class="subtitle has-text-centered">
-            Failure factors of model explanation for incorrect plausibility prediction.
-          </h2>
-        </div>
-      </div>
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{PLACEHOLDER[<bibkey>],
+  title={Think Again! The Effect of Test-Time Compute on Preferences, Opinions, and Beliefs of Large Language Models},
+  author={PLACEHOLDER[<Authors>]},
+  year={2025},
+  eprint={PLACEHOLDER[<arxiv id>]},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}</code></pre>
   </div>
 </section>
-<!-- End image carousel -->
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <!-- Centered image -->
-          <div style="text-align: center;">
-            <img src="static/images/full_example_annotation1-1.png" alt="Emotional" style="width: 600px; height: auto;"/>
-          </div>
-          <h2 class="subtitle has-text-centered">
-            Fully annotated example from the NL-Eye benchmark, featuring textual descriptions, three images, gold-standard explanations, reasoning categories, and temporal attributes (direction and duration).
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Centered image -->
-          <div style="text-align: center;">
-            <img src="static/images/full_example_annotation2-1.png" alt="Functional" style="width: 600px; height: auto;"/>
-          </div>
-          <h2 class="subtitle has-text-centered">
-            Fully annotated example from the NL-Eye benchmark, featuring textual descriptions, three images, gold-standard explanations, reasoning categories, and temporal attributes (direction and duration).
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Centered image -->
-          <div style="text-align: center;">
-            <img src="static/images/full_anno_3.png" alt="Logical" style="width: 600px; height: auto;"/>
-          </div>
-          <h2 class="subtitle has-text-centered">
-            Fully annotated example from the NL-Eye benchmark, featuring textual descriptions, three images, gold-standard explanations, reasoning categories, and temporal attributes (direction and duration).
-          </h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End image carousel -->
-
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <!-- <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video"> -->
-            <!-- Youtube embed code here -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- </section> --> 
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- </section> --> 
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/NLEYE - POSTER - ISCOL - Mor Ventura.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{ventura2024nleye,
-        title={NL-Eye: Abductive NLI for Images},
-        author={Mor Ventura and Michael Toker and Nitay Calderon and Zorik Gekhman and Yonatan Bitton and Roi Reichart},
-        year={2024},
-        eprint={2410.02613},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV}
-    }</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> based on the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project site.
+            Feel free to reuse, just link back in the footer. <br>
+            Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
