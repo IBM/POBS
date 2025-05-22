@@ -1,2 +1,2 @@
 # POBS
-this is for fun, ain't it grand!
+POBS github website
