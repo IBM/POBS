@@ -100,13 +100,49 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the Preference, Opinion, and Belief survey (POBs), a benchmark for evaluating LLMs' subjectivity across societal, ethical, and personal domains. We examine how increasing test-time compute—through reasoning and self-reflection—impacts reliability, neutrality, and consistency. Our findings show that while these mechanisms help in other tasks, they offer limited improvements here. Surprisingly, newer models tend to be less consistent and more biased, often aligning with progressive-collectivist views. POBs enables deeper auditing of LLM behavior, helping users and developers better understand and manage ideological tendencies in deployed models.
+            As Large Language Models (LLMs) become deeply integrated into human life and increas- ingly influence decision-making, it’s crucial to evaluate whether and to what extent they exhibit subjective preferences, opinions, and beliefs. These tendencies may stem from biases within the models, which may shape their behavior, influence the advice and rec- ommendations they offer to users, and poten- tially reinforce certain viewpoints. This paper presents the Preference, Opinion, and Belief survey (POBs), a benchmark developed to as- sess LLMs’ subjective inclinations across so- cietal, cultural, ethical, and personal domains. We applied our benchmark to evaluate leading open- and closed-source LLMs, measuring de- sired properties such as reliability, neutrality, and consistency. In addition, we investigated the effect of increasing the test-time compute, through reasoning and self-reflection mecha- nisms, on those metrics. While effective in other tasks, our results show that these mech- anisms offer only limited gains in our domain. Furthermore, we reveal that newer model ver- sions are becoming less consistent and more biased toward specific viewpoints, highlighting a blind spot and a concerning trend.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Main Figure</h2>
+    <div class="has-text-centered">
+      <img src="static/images/answers.png" alt="Main model answer comparison table" style="width: 100%; max-width: 800px;">
+      <p class="subtitle">Direct model responses across topics. Reveals diverse stances and refusal behaviors.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Toggle Figures</h2>
+    <div class="columns is-multiline">
+      <div class="column is-6 has-text-centered">
+        <img src="static/images/opinionation_vs_consistency.png" alt="NNI vs TCI" style="width: 100%; max-width: 500px;">
+        <p class="subtitle">A strong inverse correlation between consistency and neutrality across prompting setups.</p>
+      </div>
+      <div class="column is-6 has-text-centered">
+        <img src="static/images/table1.png" alt="Metric table" style="width: 100%; max-width: 500px;">
+        <p class="subtitle">Numerical shifts in TCI/NNI from direct to reasoning to reflection. Arrows indicate desired direction.</p>
+      </div>
+      <div class="column is-6 has-text-centered">
+        <img src="static/images/topical_stance_radar.png" alt="Topical axis spread" style="width: 100%; max-width: 500px;">
+        <p class="subtitle">TCI/NNI across 16 controversial topics. Quadrants indicate desirable behavior.</p>
+      </div>
+      <div class="column is-6 has-text-centered">
+        <img src="static/images/topic_correlation_dendogram.png" alt="Topic stance correlation" style="width: 100%; max-width: 500px;">
+        <p class="subtitle">Topics are not independent. Heatmap shows how ideological positions cluster.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
