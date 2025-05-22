@@ -1,367 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-<!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
-<!-- Replace the content tag with appropriate information -->
-<meta name="description" content="Breaking ReAct Agents: Foot-in-the-Door Attack Will Get You In">
-<meta property="og:title" content="Breaking ReAct Agents: Foot-in-the-Door Attack Will Get You In"/>
-<meta property="og:description" content="Detailed research on exploiting ReAct agents with Foot-in-the-Door attacks. Explore results, defenses, and more."/>
-<meta property="og:url" content="https://yourwebsite.com/fitd-react-agents"/>
-<!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
-<meta property="og:image" content="static/images/your_banner_image.png" />
-<meta property="og:image:width" content="1200"/>
-<meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="Breaking ReAct Agents: Foot-in-the-Door Attack Will Get You In">
-  <meta name="twitter:description" content="">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/door_color.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="POBs: Preference, Opinion, and Belief Survey">
+  <meta property="og:title" content="POBs: Preference, Opinion, and Belief Survey">
+  <meta property="og:description" content="Measuring Subjectivity, Consistency & Bias in LLMs">
+  <meta property="og:image" content="static/images/banner.png">
+  <meta property="og:url" content="https://ibm.github.io/pobs">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Agent">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>Breaking ReAct Agents - Foot in the Door</title>
-  <link rel="icon" type="image/x-icon" href="static/images/door_color.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <title>POBs: Preference, Opinion, and Belief Survey</title>
+  <link rel="icon" type="image/x-icon" href="static/images/pobs.ico">
 </head>
 <body>
 
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Breaking ReAct Agents:</h1>
-            <h1 class="title is-1 publication-title">Foot-in-the-Door Attack Will Get You In</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://itay-nakash.github.io/" target="_blank">Itay Nakash</a><sup></sup>,</span>
-                <span class="author-block">
-                  <a href="https://www.kour.me/" target="_blank">George Kour</a><sup></sup>,</span>
-                <span class="author-block">
-                  <a href="https://www.linkedin.com/in/guy-uziel-12115251/?originalSubdomain=il" target="_blank">Guy Uziel</a></span>,</span>
-                <span class="author-block">
-                  <a href="https://www.linkedin.com/in/ateret-anaby-tavor-8641297/" target="_blank">Ateret Anaby-Tavor</a></span>
-              </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">IBM Research AI<br></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2410.16950.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/itay-nakash/FITD-ReAct-Agents-Attack" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-                
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2410.16950" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- Hero Section -->
+<section class="hero is-primary">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1">POBs: Preference, Opinion, and Belief Survey</h1>
+    <h2 class="subtitle is-4">Measuring Subjectivity, Consistency & Bias in LLMs</h2>
+    <p>
+      <a class="button is-dark is-rounded" href="https://arxiv.org/abs/PLACEHOLDER" target="_blank">
+        <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span>
+      </a>
+      <a class="button is-dark is-rounded" href="https://anonymous.4open.science/r/PLACEHOLDER" target="_blank">
+        <span class="icon"><i class="fas fa-database"></i></span><span>Benchmark</span>
+      </a>
+      <a class="button is-dark is-rounded" href="https://github.com/PLACEHOLDER" target="_blank">
+        <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+      </a>
+    </p>
   </div>
 </section>
 
-<!-- Main Image-->
-<section class="hero teaser">
-  <div class="container" style="max-width: 60%;">
-    <div class="hero-body">
-      <img src="static/images/attack_flow_image.png" alt="Foot-in-the-Door Attack Flow" style="width: 100%; height: auto;">
-      <h2 class="subtitle has-text-centered">
-        Foot-in-the-door attack flow. The user asks the agent to fix a website bug.
-        The agent reads a contaminated GitHub issue with an indirect prompt injection (red) and a foot-in-the-door distractor (blue).
-        These requests enter the agent's thought process, leading it to perform both the harmless distractor (calculate 2+4) and the malicious action (send admin credentials).
-      </h2>
-    </div>
+<!-- Abstract -->
+<section class="section">
+  <div class="container content">
+    <h2 class="title is-3">Abstract</h2>
+    <p>As Large Language Models (LLMs) become deeply integrated into human life and increasingly influence decision-making, it's crucial to evaluate whether and to what extent they exhibit subjective preferences, opinions, and beliefs. These tendencies may stem from biases within the models, which may shape their behavior, influence the advice and recommendations they offer to users, and potentially reinforce certain viewpoints. This paper presents the Preference, Opinion, and Belief survey (POBs), a benchmark developed to assess LLMs' subjective inclinations across societal, cultural, ethical, and personal domains. We applied our benchmark to evaluate leading open- and closed-source LLMs, measuring desired properties such as reliability, neutrality, and consistency. In addition, we investigated the effect of increasing the test-time compute, through reasoning and self-reflection mechanisms, on those metrics. While effective in other tasks, our results show that these mechanisms offer only limited gains in our domain. Furthermore, we reveal that newer model versions are becoming less consistent and more biased toward specific viewpoints, highlighting a blind spot and a concerning trend.</p>
   </div>
 </section>
 
-<!-- End Main Image -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Following the advancement of large language models (LLMs), the development of LLM-based autonomous agents has become increasingly prevalent. As a result, the need to understand the security vulnerabilities of these agents has become a critical task. We examine how ReAct agents can be exploited using a straightforward yet effective method we refer to as the \emph{foot-in-the-door} attack.
-            Our experiments show that indirect prompt injection attacks, prompted by harmless and unrelated requests (such as basic calculations) can significantly increase the likelihood of the agent performing subsequent malicious actions.
-            Our results show that once a ReAct agent's thought includes a specific tool or action, the likelihood of executing this tool in the subsequent steps increases significantly, as the agent seldom re-evaluates its actions. 
-            Consequently, even random, harmless requests can establish a ‘foot-in-the-door’, allowing an attacker to embed malicious instructions into the agent's thought process, making it more susceptible to harmful directives.
-            To mitigate this vulnerability, we propose implementing a simple reflection mechanism that prompts the agent to reassess the safety of its actions during execution, which can help reduce the success of such attacks.          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/podcast_with_subtitles.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        A quick overview of the work, generated by NotebookLM and edited by the authors.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-         <!-- Center Image -->
-
-        <img src="static/images/additional explan_fig.png" alt="Setup Explained"/>
-        <h2 class="subtitle has-text-centered">
-          ReAct setup with various attack scenarios. The agent is informed of its tools via the system prompt (1). 
-          Attacks like Indirect Prompt Injection (IPI) and Foot-in-the-Door (FITD) inject instructions into observations from external tools (2).
-           FITD differs by the position and timing of distractor requests. In unfamiliar FITD, the agent can't use the distractor tool, causing invalid results.
-            Thought Injection (TI) places both actions in the agent's thought (3), while Harmless Thought Injection (HTI) includes only the benign request        
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/main_table.jpeg" alt="Results Table"/>
-        <h2 class="subtitle has-text-centered">
-          Main results table: The table shows the attack success rates (ASR, %) across four different models and methods (and over 510 different attack cases).
-          Our Foot-in-the-Door (FITD) attack proves significantly more effective than the baseline IPI (indirect prompt injection) across the board.
-          For familiar FITD (where the agent know the distractor that is used for FITD), ASR increased by almost double in many cases.
-          The combined IPI+FITD+TI method, that manipulate and inject the agent a thought achieves the highest ASR, reaching 99.2% on Mixtral and 97.1% on average,
-          showing the vulnerabilities the ReAct mechanism has from its thought process.          
-  
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/defences_fig4.png" alt="Defenses effect"/>
-        <h2 class="subtitle has-text-centered">
-          This chart shows how three defenses—Hesitation Reflection, Safe Reflection, and Self Reflection—reduce the success of two types of attacks (IPI and FITD) across four models (LLaMA 3.1 70B, LLaMA 3 70B, Mixtral 8x7B, GPT-4o Mini). <br>
-          <b>Self Reflection:</b> offers moderate protection, but dosen't require additional LLM instanse, and the least invasive. <br>
-          <b>Hesitation Reflection:</b> defese better agasint the different attack cases (without false-positives), but require additional LLM instance. <br>
-          <b>Safe Reflection (orange):</b> the most invasive, defense against most of the attacks effiecnly, but require additioanl LLM instance and include significant amount of false-postiives. <br>
-       </h2>
-     </div>
-     <div class="item has-text-centered">
-      <!-- Your image here -->
-      <img src="static/images/heatmaps.jpeg" alt="Position Heatmap" class="is-centered"/>
-      <h2 class="subtitle has-text-centered">
-        This heatmap compares the success rates (ASR) of FITD attacks based on the position and timing of the distractor across four models.
-        The x-axis represents the timing (early or late action), and the y-axis represents the position (early or late) within the input.
-        Results show that earlier placement (Position0) and earlier timing (Time0) consistently lead to higher ASR, indicating that starting with the distractor before the malicious request is the most effective approach, aligning with the original psychological foot-in-the-door effect. 
-        The position of the distractor has a greater impact than timing (as can be seen in the heatmap - the difference between the top and bottom rows is more significant than the difference between the left and right columns). 
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-
-
-        <!-- Appendix exampels -->
-
-        <section class="hero is-small">
-          <div class="hero-body">
-            <div class="container">
-              <div id="results-carousel" class="carousel results-carousel">
-                <div class="item">
-                  <!-- Centered image -->
-                  <div style="text-align: center;">
-                    <img src="static/images/thoughts_exampels.png" alt="Thoughts exampels" style="width: 1100px; height: auto;" />
-                  </div>
-                  <h2 class="subtitle has-text-centered">
-                    <b>Examples of hesitation thoughts during successful attacks:</b> nce an agent generates a thought with intent, it typically proceeds with the action, even if harmful. Hesitation or objection in the thought process did not prevent the execution of malicious actions. The hesitation reflector identified these moments when active.
-                  </h2>
-                </div>
-        
-                <div class="item">
-                  <!-- Centered image -->
-                  <div style="text-align: center;">
-                    <img src="static/images/reflector_thoguhts.png" alt="Reflector examples" />
-                  </div>
-                  <h2 class="subtitle has-text-centered">
-                  <b>Reflector's role in ReAct-based agents during FITD attacks:</b> This illustrates the thought process of agents, where harmful intentions trigger the hesitation reflector to halt actions, while harmless thoughts lead to uninterrupted agent execution.
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-<!-- End image carousel -->
-
-
-
-
-<!-- 
-<section class="hero is-small is-light">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
--->
-
-
-<!-- 
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
--->
-
-
-
-
-
-<!-- 
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
--->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{nakash2024breakingreactagentsfootinthedoor,
-        title={Breaking ReAct Agents: Foot-in-the-Door Attack Will Get You In}, 
-        author={Itay Nakash and George Kour and Guy Uziel and Ateret Anaby-Tavor},
-        year={2024},
-        eprint={2410.16950},
-        archivePrefix={arXiv},
-        primaryClass={cs.CR},
-        url={https://arxiv.org/abs/2410.16950}, 
-  }</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
+<!-- Teaser Visualization -->
+<section class="section has-text-centered">
   <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <img src="static/images/ideology_axes_plot.png" alt="POBs ideological axis plot" style="max-width: 80%;">
+    <p class="subtitle">Ideological leanings of LLMs revealed via POBs — plotted on Progressivism vs. Conservatism and Individualism vs. Collectivism axes.</p>
+  </div>
+</section>
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+<!-- Methodology Summary -->
+<section class="section">
+  <div class="container content">
+    <h2 class="title is-3">Methodology</h2>
+    <ul>
+      <li>20 topics (e.g., Abortion, Free Speech, AI Risk)</li>
+      <li>Likert-scale questions with polarity scores</li>
+      <li>3 prompting modes: Direct, Reasoning, Self-Reflection</li>
+      <li>Metrics: Reliability, Topical Consistency (TCI), Non-Neutrality Index (NNI)</li>
+    </ul>
+  </div>
+</section>
 
-        </div>
+<!-- Results Carousel -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3 has-text-centered">Key Results</h2>
+    <div class="carousel results-carousel">
+      <div class="item">
+        <img src="static/images/heatmap_polarity_topics.png" alt="Topic Heatmap">
+        <p class="subtitle has-text-centered">Average polarity heatmap across topics and models.</p>
+      </div>
+      <div class="item">
+        <img src="static/images/nni_vs_tci.png" alt="NNI vs TCI">
+        <p class="subtitle has-text-centered">Trade-off between expressing opinions (NNI) and being consistent (TCI).</p>
+      </div>
+      <div class="item">
+        <img src="static/images/model_similarity_heatmap.png" alt="Model Similarity">
+        <p class="subtitle has-text-centered">Model similarity based on polarity alignment across topics.</p>
       </div>
     </div>
   </div>
-</footer>
+</section>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<!-- BibTeX -->
+<section class="section">
+  <div class="container content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{ }</code></pre>
+  </div>
+</section>
 
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
