@@ -1,8 +1,8 @@
 # POBS: Preference, Opinion, and Belief Survey
 
-This repository contains the **anonymized dataset and model outputs** accompanying our paper:  
+This repository contains the POBS dataset and model responses to the dataset:  
 **"Think Again! The Effect of Test-Time Compute on Preferences, Opinions, and Beliefs of Large Language Models"**  
-(*Under review for ACL Industry Track*).
+(Published in ACL 2025 - Industry Track*).
 
 ## 📦 Contents
 
@@ -20,18 +20,22 @@ This repository contains the **anonymized dataset and model outputs** accompanyi
 
 - **Declarative POBS**  
   A simplified version of the benchmark containing a single, direct question per polar topic to assess models’ self-declared stances.
+  It serves to compare the model's declarative stance with its actual stance inferred from POBs.
 
 ## 📁 File Structure
 
 ```
 pobs/
-├── POBS_v11.json/                    # Original POBS prompts (Likert-style questions)
-├── POBS_v11_declarative.json/       # Direct view1/view2 preference questions (Declarative POBS)
-├── POBS_v11_model_responses/        # Model responses to POBS_v11 across prompting styles
-│   ├── model_name.json              # One file per model
-├── POBS_v11_declarative_responses/  # Model responses to Declarative POBS
-│   ├── model_name.json              # One file per model
-├── README.md                        # This file
+├── POBS_v11.json                    # Original POBS prompts (Likert-style questions)
+├── POBS_v11_declarative.json       # Direct view1/view2 preference questions (Declarative POBS)
+├── POBS_v11_model_responses/       # Model responses to POBS_v11 across prompting styles
+│   ├── POBS_V11_direct/            # Responses to direct prompts
+│   ├── POBS_V11_reasoning_reflection/  # Responses to reasoning + reflection prompts
+├── POBS_v11_declarative_responses/ # Model responses to Declarative POBS
+│   ├── POBS_V11_direct/            # Declarative direct responses
+│   ├── POBS_V11_reasoning_reconsider/ # Declarative reasoning + reconsideration responses
+├── README.md                       # This file
+
 ```
 
 ## 🔬 Purpose
@@ -52,3 +56,11 @@ As described in the accompanying paper, this dataset enabled us to:
 2. Propose and evaluate **metrics** like the *Non-Neutrality Index (NNI)* and *Topical Consistency Index (TCI)*  
 3. Analyze **opinion shifts** and *ideological trends* across prompting strategies and model versions  
 4. Highlight that **reasoning and reflection**, while helpful in other domains, offer only **limited gains** in improving neutrality and consistency on subjective topics
+
+## Citation:
+@article{kour2025think,
+  title={Think Again! The Effect of Test-Time Compute on Preferences, Opinions, and Beliefs of Large Language Models},
+  author={Kour, George and Nakash, Itay and Anaby-Tavor, Ateret and Shmueli-Scheuer, Michal},
+  journal={arXiv preprint arXiv:2505.19621},
+  year={2025}
+}
